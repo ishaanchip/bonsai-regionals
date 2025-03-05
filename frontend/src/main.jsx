@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import React from 'react';
+import {disableReactDevTools} from "@fvilers/disable-react-devtools"
 
 //redux func
   // import { Provider } from 'react-redux'
@@ -21,6 +22,8 @@ if (!PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key")
 }
 
+
+if (process.env.NODE_ENC === "production") disableReactDevTools()
 // //globalizes variables
 // const store =createStore(allReducers, window.__REDUX_DEVTOOLS_EXTENSION__&& window.__REDUX_DEVTOOLS_EXTENSION__())
 
