@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+
+.boiler-header-income-shell{
+    width:100%;
+    min-height:100px;
+    max-height:125px;
+    background-color: white;
+    border:2px solid whitesmoke;
+}
+
+.boiler-header-income-content{
+    width:95%;
+    min-height:inherit;
+    max-height: inherit;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.boiler-header-income-content div, .boiler-header-income-content a{
+    display: flex;
+    /* border:2px solid white; */
+    justify-content: space-around;
+    width:30%;
+    
+}
+.boiler-header-income-content .site-nav-options{
+    width:40%;
+}
+
+.boiler-header-income-content .site-nav-options a{
+    text-align: center;
+}
+
+
+
+.boiler-header-income-content .site-nav-options-inactive{
+    color:grey;
+}
+
+
+.boiler-header-income-content a{
+    display: block;
+}
+
+.boiler-header-income-content h1{
+    font-size: 2.5rem;
+}
+
+.boiler-header-income-content .auth-nav-options{
+    display: flex;
+    justify-content: center;
+}
+
+.boiler-header-income-content p{
+    font-size: 1.2rem;
+    font-family: "Roboto Serif", serif;
+}
+
+
+.auth-nav-options button{
+    width:120px;
+    height:40px;
+    margin:0 2%;
+    border:none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(201, 192, 192);
+    outline: none;
+    transition: 0.5s ease;
+    font-size:0.8rem;
+    font-family: "Roboto Serif", serif;
+}
+
+.boiler-header-income-content .auth-nav-options button:hover{
+    transition: 0.5s ease;
+    background-color: rgb(249, 246, 246);
+}
+
+
+
+
+
+
+/* web view: remove auth nav options from bottom, push to top */
+@media only screen and (min-width:800px){
+    .nav-options-mobile button{
+        display: none;
+    }
+}
+
+/* small computer view: remove auth nav options from top, push to bottom */
+@media only screen and (max-width:800px) and (min-width:500px){
+    .nav-options-web button{
+        display: none;
+    }
+    .boiler-header-income-content .site-nav-options{
+      width:65%;
+    }
+    .boiler-header-income-content .auth-nav-options{
+        width:0%;
+    }
+    .boiler-header-income-content h1{
+        font-size: 2.2rem;
+    }
+}
+
+/* mobile view: smaller version of small computer view */
+@media only screen and (max-width:500px){
+    .nav-options-web button{
+        display: none;
+    }
+    .boiler-header-income-content .site-nav-options{
+      width:65%;
+    }
+    .boiler-header-income-content  .site-nav-options p{
+        font-size: 0.8rem;
+    }
+    .boiler-header-income-content .auth-nav-options{
+        width:0%;
+    }
+    .boiler-header-income-content h1{
+        font-size: 1.5rem;
+    }
+}

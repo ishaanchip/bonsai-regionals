@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+.home-shell{
+    width:100vw;
+    height:100vh;
+    overflow-x: hidden;
+    background-color: rgb(21, 19, 19);
+}
+
+/* .boiler-header-shell{
+    width:100%;
+    min-height:100px;
+    max-height:125px;
+    background-color: white;
+    border:2px solid whitesmoke;
+}
+
+.boiler-header-content{
+    width:95%;
+    min-height:inherit;
+    max-height: inherit;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.boiler-header-content div, .boiler-header-content h1{
+    display: flex;
+    justify-content: space-around;
+    width:30%;
+}
+
+.boiler-header-content .site-nav-options{
+    width:40%;
+}
+
+.boiler-header-content .site-nav-options a{
+    text-decoration: none;
+    color:inherit
+}
+
+.boiler-header-content .site-nav-options-inactive{
+    color:grey;
+}
+
+
+.boiler-header-content h1{
+    display: block;
+    font-size: 2.5rem;
+}
+
+.boiler-header-content .auth-nav-options{
+    display: flex;
+    justify-content: center;
+}
+
+.boiler-header-content p{
+    font-size: 1.2rem;
+    font-family: "Roboto Serif", serif;
+}
+
+
+.auth-nav-options button{
+    width:120px;
+    height:40px;
+    margin:0 2%;
+    border:none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(201, 192, 192);
+    outline: none;
+    transition: 0.5s ease;
+    font-size:0.8rem;
+    font-family: "Roboto Serif", serif;
+}
+
+.boiler-header-content .auth-nav-options button:hover{
+    transition: 0.5s ease;
+    background-color: rgb(249, 246, 246);
+} */
+
+
+
+.home-content-shell{
+    margin:auto;
+    margin-top: 5%;
+    text-align: center;
+    color:white;
+    width:90%;
+    
+}
+
+.home-content-shell h1{
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 3rem;
+    font-family: "Rubik", sans-serif;
+    width:50%;
+}
+
+
+.bonsai-slogans{
+    display: flex;
+    width:90%;
+    height:auto;
+    min-height:150px;
+    margin: auto;
+    justify-content: center;
+}
+
+.bonsai-slogans p{
+    font-size: 1.7rem;
+}
+
+
+/* web view: remove auth nav options from bottom, push to top */
+@media only screen and (min-width:800px){
+    .nav-options-mobile button{
+        display: none;
+    }
+}
+
+/* small computer view: remove auth nav options from top, push to bottom */
+@media only screen and (max-width:800px) and (min-width:500px){
+    /* .nav-options-web button{
+        display: none;
+    }
+    .boiler-header-content .site-nav-options{
+      width:65%;
+    }
+    .boiler-header-content .auth-nav-options{
+        width:0%;
+    }
+    .boiler-header-content h1{
+        font-size: 2.2rem;
+    } */
+    .home-content-shell h1{
+        font-size: 2.5rem;
+    }
+    .bonsai-slogans p{
+        font-size: 1.3rem;
+    }
+}
+
+/* mobile view: smaller version of small computer view */
+@media only screen and (max-width:500px){
+    /* .nav-options-web button{
+        display: none;
+    }
+    .boiler-header-content .site-nav-options{
+      width:65%;
+    }
+    .boiler-header-content  .site-nav-options p{
+        font-size: 0.8rem;
+    }
+    .boiler-header-content .auth-nav-options{
+        width:0%;
+    }
+    .boiler-header-content h1{
+        font-size: 1.5rem;
+    } */
+    .home-content-shell h1{
+        font-size: 2rem;
+    }
+    .bonsai-slogans p{
+        font-size: 1rem;
+    }
+}
