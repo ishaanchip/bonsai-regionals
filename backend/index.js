@@ -17,9 +17,11 @@ app.use(bodyParser.urlencoded({extended:false}))
 
 
 const corsOptions = {
-   origin:"*",
+   origin:["https://www.bonsai-fbla.com"],
    credentials:true,
-   optionSuccessStatus:200
+   optionSuccessStatus:200,
+   methods: ["GET", "POST", "PUT", "DELETE"],
+   allowedHeaders: ["Content-Type", "Authorization"],
 }
 
 

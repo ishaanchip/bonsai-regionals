@@ -102,6 +102,7 @@ const OpenAI = require("openai")
                 {username:username},
                 {"account_income":1, _id:0}
             )
+            console.log("success!");
             res.status(200).json({result})
         }
         catch(err){
