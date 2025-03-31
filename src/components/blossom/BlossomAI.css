@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+.blossom-ai-shell > *{
+    border: 1px solid black;
+    font-family: "Roboto Mono", serif;
+}
+
+.blossom-ai-shell .title-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:15%;
+    font-size:18px;
+    color:rgb(245, 142, 159);
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+}
+
+
+.blossom-ai-shell .chat-area{
+    height:65%;
+    overflow: scroll;
+}
+
+.blossom-ai-shell .chat-area .blossom-auto-response{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:10%;
+    font-size: 24px;
+}
+
+.blossom-ai-shell .chat-area .blossom-response{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(246, 179, 179);
+    color:white;
+    width:75%;
+    margin: 2%;
+    margin-bottom: 10%;
+    padding:7%;
+    line-height: 2;
+    border:2px solid brown;
+    border-radius: 5%;
+    font-size: 18px;
+    overflow: scroll;
+}
+
+.blossom-ai-shell .input-question-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:18%;
+
+}
+
+.blossom-ai-shell .input-question-area input{
+    font-size: 18px;
+    width:75%;
+    height:40%;
+    border-radius: 25px;
+    padding-left: 5%;
+    padding-right: 3%;
+    margin-right: 2%;
+    font-family: "Roboto Mono", serif;
+    font-size: 14px;
+}
