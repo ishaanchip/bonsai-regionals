@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   server:{
     port:3000,
-    proxy: "https://bonsai-api.onrender.com"
+    proxy: "https://bonsai-api-regionals.onrender.com"
   }
 })

@@ -95,10 +95,14 @@ const Income = () => {
             }
 
             const handleAddIncome = () =>{
-                //1. check all fields valid
+                //1a. check all fields valid
                 let incomeInputResults = verifyIncomeInput(position, salary, startDate, endDate)
+                //1b. creates custom id for each income source to make each unique
                 let incomeId = localStorage.getItem('the_current_user') + "-" + position.toLowerCase() + "-" + parseInt(Math.random()*1000)
+                //1c. logging results to see if getting expected output
                 console.log(incomeInputResults)
+
+                //2a. if results pass checks, edits front end array so display updates automatically
                 if (incomeInputResults === true){
                     setIncomeSources([...incomeSources, {
                         "name":standardCaps(position),
@@ -108,12 +112,12 @@ const Income = () => {
                         "end_date": endDate,
                         "income_id":incomeId
                     }])
-                    //make changes to mongodb
+                    //2b. lazy changes to mongodb & clears entry fields after success
                     addIncomeSource(localStorage.getItem('the_current_user'), standardCaps(position), salary, frequency, startDate, endDate, incomeId)
                     clearInputIncome()
                     return "completed entry"
                 }
-                //2. errors: point out what is wrong
+                //3. errors: point out what is wrong if income results no good
                 setErrorMessage(incomeInputResults)
                 setErrorInput(true)
             }
