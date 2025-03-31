@@ -329,11 +329,11 @@ const ExpenseCategory = () => {
                                 console.log("running")
                                 handleAddExpense()
                             }
-                            }>confirm income source</p>
+                            }>confirm expense source</p>
                             <p onClick={()=> { 
                                 clearInputIncome()
                             }
-                            }>discard income source</p>
+                            }>discard expense source</p>
                         </div>
                     }
                 </dialog>
