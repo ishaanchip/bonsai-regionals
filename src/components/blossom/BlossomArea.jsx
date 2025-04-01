@@ -17,8 +17,8 @@ const BlossomArea = () => {
     <div className='blossom-shell'>
         <Header />
         <div className='blossom-area'>
-            <Projection />
-            <BlossomAI />
+            <Projection className="projection-area"/>
+            <BlossomAI className="blossom-ai-area"/>
         </div>
     </div>
   )

@@ -18,8 +18,10 @@ const BlossomAI = () => {
   //base form would have placeholder input and empty chat box  
 
   const [userQuery, setUserQuery] = useState("");
-  const [blossomHistory, setBlossomHistory] = useState([]);
+  //const [blossomHistory, setBlossomHistory] = useState(["yes. response #1 ..........", "no. response #2 .........."]);
   const [waiting, setWaiting] = useState(false)
+
+  const [blossomHistory, setBlossomHistory] = useState([]);
 
 
   const handleUserQuery = async() =>{
@@ -27,7 +29,10 @@ const BlossomAI = () => {
         setWaiting(true);
         const blossomAnswer = await retrieveBlossomResponse(localStorage.getItem('the_current_user'), userQuery)
         setUserQuery("");
-        setBlossomHistory([blossomAnswer, ...blossomHistory])
+        setBlossomHistory([{
+            "question":userQuery,
+            "answer":blossomAnswer
+        }, ...blossomHistory])
         setWaiting(false)
         
     }
@@ -44,7 +49,7 @@ const BlossomAI = () => {
   return (
     <div className='blossom-ai-shell'>
         <div className='title-area'>
-            <h1>blossom</h1>
+            <h1>chat history</h1>
         </div>
         {
         !waiting ?
@@ -53,8 +58,13 @@ const BlossomAI = () => {
                 blossomHistory.length > 0
                 ?
                 blossomHistory.map((response, i) =>(
-                    <div className='blossom-response' key={"blossom"+ i}>
-                        <p>{response}</p>
+                    <div className='blossom-query'>
+                        <div className='blossom-question' key={"blossom"+ i}>
+                            <p>{response.question}</p>
+                        </div>
+                        <div className='blossom-response' key={"blossom"+ i}>
+                            <p>{response.answer}</p>
+                        </div>
                     </div>
                 ))
                 :

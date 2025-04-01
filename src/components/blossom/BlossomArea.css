@@ -2,17 +2,17 @@
     width:100vw;
     height:100vh;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .blossom-area{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 5%;
 }
 
 .blossom-area > *{
     width:50%;
-    max-width:600px;
-    height:570px;
-    border:2px solid black;
+    /* min-height:570px;
+    border: 2px solid black; */
 }

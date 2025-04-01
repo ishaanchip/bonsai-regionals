@@ -2,9 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 .projection-shell{
-    width:80%;
+    width:580px;
+    height:570px;
     padding-left: 2%;
+    margin-left: 5%;
     font-family: "Roboto Mono", serif;
+    border: 2px solid black;
 }
 
 

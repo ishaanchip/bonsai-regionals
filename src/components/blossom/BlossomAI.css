@@ -1,25 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+.blossom-ai-shell{
+    width:700px;
+    height: 720px;
+    margin-top: -5%;
+    background-color: whitesmoke;
+    overflow: hidden;
+    border:2px solid whitesmoke;
+}
 .blossom-ai-shell > *{
-    border: 1px solid black;
     font-family: "Roboto Mono", serif;
+    overflow: hidden;
 }
 
 .blossom-ai-shell .title-area{
     display: flex;
     justify-content: center;
     align-items: center;
-    height:15%;
+    height:7%;
     font-size:18px;
-    color:rgb(245, 142, 159);
+    font-weight: 300;
+    color:rgb(9, 9, 9);
     font-family: 'Times New Roman', Times, serif;
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 
 .blossom-ai-shell .chat-area{
-    height:65%;
+    height:77%;
     overflow: scroll;
+    background-color: rgb(240, 217, 217)
 }
 
 .blossom-ai-shell .chat-area .blossom-auto-response{
@@ -31,20 +42,42 @@
     font-size: 24px;
 }
 
+.blossom-ai-shell .chat-area .blossom-query{
+    height:80%;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 5%;
+}
+
+.blossom-ai-shell .chat-area .blossom-question{
+    background-color: whitesmoke;
+    color:black;
+    width:55%;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-left: 250px;
+    margin-bottom: 2%;
+    padding:4%;
+    line-height: 2;
+    border:2px solid brown;
+    border-radius: 25px;
+    font-size: 16px;
+    overflow: scroll;
+}
+
 .blossom-ai-shell .chat-area .blossom-response{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     background-color: rgb(246, 179, 179);
     color:white;
-    width:75%;
+    width:65%;
     margin: 2%;
-    margin-bottom: 10%;
-    padding:7%;
+    margin-top: 10%;
+    padding:4%;
     line-height: 2;
     border:2px solid brown;
-    border-radius: 5%;
-    font-size: 18px;
+    border-radius: 25px;
+    font-size: 16px;
     overflow: scroll;
 }
 
@@ -52,7 +85,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height:18%;
+    height:15%;
 
 }
 
