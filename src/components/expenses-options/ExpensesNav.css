@@ -14,9 +14,10 @@
 
 .expenses-options{
     display: flex;
-    flex-direction:row;
+    flex-direction: column;
     flex-wrap:wrap;
     justify-content: center;
+    align-items: center;
     margin:auto;
     margin-top: 5%;
     text-align: center;
@@ -27,24 +28,28 @@
 
 .expenses-option {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
-    width:33%;
+    align-items: center;
+    width:60%;
     min-width: 200px;
-    height:235px;
-    margin:2%;
-    border:1.5px solid black;    
-    box-shadow: 2px 5px 5px gray;
+    height:85px;
+    margin:2%; 
+    border:1px solid black;
+
 }
 
 .expenses-option h3{
     font-size: 18px;
     font-family: "Rubik", sans-serif;
+    font-weight: 450;
+    text-align: left;
     height:20%;
+    width:80%;
 }
 
 .expenses-option h1{
-    font-size: 36px;
+    font-size: 40px;
 }
 
 .expenses-option p{

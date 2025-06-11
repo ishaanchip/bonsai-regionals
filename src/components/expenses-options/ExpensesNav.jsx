@@ -32,22 +32,22 @@ const ExpensesNav = () => {
             <div className='expenses-options'>
                 <Link to="/expenses-category/food_and_drink" className='expenses-option'>
                         <h3>Food & Drink </h3>
-                        <h1 style={{fontSize:'60px'}}>🥡</h1>
+                        <h1 >🥡</h1>
                 </Link>
 
                 <Link to="/expenses-category/recurring_expenses" className='expenses-option'>
                         <h3>Subscriptions/Recurring Expenses</h3>
-                        <h1 style={{fontSize:'60px'}}> ⏰</h1>
+                        <h1 > ⏰</h1>
                 </Link>
 
                 <Link to="/expenses-category/essentials" className='expenses-option'>
                         <h3>Essentials</h3>
-                        <h1 style={{fontSize:'60px'}}>📚</h1>
+                        <h1 >📚</h1>
                 </Link>
 
                 <Link to="/expenses-category/entertainment" className='expenses-option'>
                         <h3>Entertainment/Misc </h3>
-                        <h1 style={{fontSize:'60px'}}>🎡</h1>
+                        <h1 >🎡</h1>
                 </Link>
             </div>
             <div className='expenses-data-display'>
