@@ -28,15 +28,15 @@ const ExportPie = ({incomeData, chartType, chartTypeVersion}) => {
            //pop up input variables
 
             //final state
-            const [displayStartDate, setDisplayStartDate] = useState("2025-06-01");
-            const [displayEndDate, setDisplayEndDate] = useState("2025-06-28");
+            const [displayStartDate, setDisplayStartDate] = useState("2025-07-01");
+            const [displayEndDate, setDisplayEndDate] = useState("2025-07-28");
             const [incomeRange, setIncomeRange] = useState({
               rangeStart:displayStartDate,
               rangeEnd:displayEndDate
           })
 
             //mutable date input fields 
-              const [displayMonth, setDisplayMonth] = useState("June")
+              const [displayMonth, setDisplayMonth] = useState("July")
               const [displayYear, setDisplayYear] = useState(2025)
               const [displayStartDay, setDisplayStartDay] = useState(1);
               const [displayEndDay, setDisplayEndDay] = useState(28);
