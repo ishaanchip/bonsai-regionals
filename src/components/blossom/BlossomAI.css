@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
 
 .blossom-ai-shell{
     width:700px;
@@ -8,6 +9,8 @@
     background-color: whitesmoke;
     overflow: hidden;
     border:2px solid whitesmoke;
+
+
 }
 .blossom-ai-shell > *{
     font-family: "Roboto Mono", serif;
@@ -18,19 +21,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height:7%;
+    height:10%;
     font-size:18px;
     font-weight: 300;
     color:rgb(9, 9, 9);
     font-family: 'Times New Roman', Times, serif;
     background-color: whitesmoke;
+
+    /*edits*/
+    background-color: rgb(0, 0, 0);
+    color:white;
+    font-family: "Rubik", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 .blossom-ai-shell .chat-area{
-    height:77%;
+    height:74%;
     overflow: scroll;
-    background-color: rgb(240, 217, 217)
+    background-color: rgb(240, 217, 217);
+
+        /*edits*/
+
+        background-color:white;
+
+
 }
 
 .blossom-ai-shell .chat-area .blossom-auto-response{
@@ -39,7 +54,12 @@
     align-items: center;
     text-align: center;
     padding:10%;
-    font-size: 24px;
+    font-size: 28px;
+    line-height: 1.75;
+
+    /*edits*/
+    font-family: "Comfortaa", sans-serif;
+
 }
 
 .blossom-ai-shell .chat-area .blossom-query{
@@ -62,6 +82,12 @@
     border-radius: 25px;
     font-size: 16px;
     overflow: scroll;
+        /*edits made */
+        background-color: rgba(2,122,255,255);
+        color:white;
+        border:1px solid gray;
+        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Comfortaa", sans-serif;
 }
 
 .blossom-ai-shell .chat-area .blossom-response{
@@ -69,6 +95,7 @@
     justify-content: center;
     align-items: left;
     background-color: rgb(246, 179, 179);
+
     color:white;
     width:65%;
     margin: 2%;
@@ -79,6 +106,13 @@
     border-radius: 25px;
     font-size: 16px;
     overflow: scroll;
+
+    /*edits made */
+    background-color: gainsboro;
+    color:black;
+    border:1px solid gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Comfortaa", sans-serif;
 }
 
 .blossom-ai-shell .input-question-area{
